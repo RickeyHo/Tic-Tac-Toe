@@ -57,7 +57,7 @@ public class Game {
 
 
     public void run() throws IOException {
-        while (!board.isFull){
+        while (!board.isFull && board.winner() == Mark.NONE){
 
             this.board.place(currPlayer.nextMove());
 
@@ -75,6 +75,8 @@ public class Game {
             this.printBoard();
 
         }
+
+        System.out.println("Congratulations to " + board.winner());
 
 
     }
