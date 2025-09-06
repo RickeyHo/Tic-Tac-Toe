@@ -20,7 +20,6 @@ public class ConsoleApp {
                 respAccepted = true;
                 prot = new HumanPlayer(Mark.O, board, scnr);
                 opp = new AIPlayer(Mark.X, board, strat);
-                opp = new HumanPlayer(Mark.X, board, scnr);
 
 
             }
@@ -28,7 +27,6 @@ public class ConsoleApp {
                 respAccepted = true;
                 prot = new HumanPlayer(Mark.X, board, scnr);
                 opp = new AIPlayer(Mark.O, board, strat);
-                opp = new HumanPlayer(Mark.O, board, scnr);
 
             }
         }
